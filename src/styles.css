@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../node_modules/angular-calendar/css/angular-calendar.css";
+
+
+.cal-month-view {
+    /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"  viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>') !important; */
+    /* backgrorund image no repeat center */
+    /* background-image: url('./assets/logo.png') !important;
+    background-repeat: no-repeat;
+    background-position: center; */
+    
+    height: auto;
+    margin-top: 0;
+    opacity: 0.8;
+    /* rounded borders */
+    border-radius: 16px;
+    border-color: transparent;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    border-color: transparent;
+    border-width: 0px;
+}
+
+
+
+
+.cal-month-view .cal-header {
+    text-align: center;
+    font-weight: bolder;
+    /* font-size: 1.5em; */   
+}
+
+.cal-month-view .cal-day-number {
+    font-size: 1.5em;
+    font-weight: bolder;
+    /* color: #000; */
+}
+
