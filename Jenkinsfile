@@ -4,20 +4,19 @@ pipeline {
     stages {
         stage('Get from SCM') {
             steps {
-                // Add your SCM steps here
-                git 'https://'
+                git 'https://github.com/lakpahana/4040-Lakpahana'
             }
         }
         
         stage('Dockerize the application') {
             steps {
-                // Add your test steps here
+                sh 'sudo docker build -t ground-booking .'
             }
         }
         
         stage('Containerize the application') {
             steps {
-                // Add your deployment steps here
+                sh 'sudo docker run -d  -p 4200:4200 ground-booking'
             }
         }
     }
